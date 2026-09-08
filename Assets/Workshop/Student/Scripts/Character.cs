@@ -31,7 +31,7 @@ namespace Solution
 
             if (HasPlacement(toX, toY))
             {
-                bool isCanWalkTo = mapGenerator.GetMapData(toX,toY).Hit();
+                bool isCanWalkTo = mapGenerator.GetMapData(toX, toY).Hit();
                 if (isCanWalkTo)
                 {
                     UpdatePosition(toX, toY);
@@ -61,7 +61,7 @@ namespace Solution
             var mapData = mapGenerator.GetMapData(x, y);
             return mapData != null;
         }
-      
+
 
         public virtual void TakeDamage(int Damage)
         {
