@@ -7,7 +7,7 @@ namespace Assignment
     {
         public void Start()
         {
-            // AS01_CountWords();
+             AS01_CountWords();
             // AS02_CountNumber();
             // AS03_CheckValidBrackets();
             // AS04_PrintReverseLinkedList();
@@ -27,8 +27,38 @@ namespace Assignment
 
         public void AS01_CountWords()
         {
+         
             string[] words = as01Words;
-            throw new System.NotImplementedException();
+
+            Dictionary<string, int> counter = new Dictionary<string, int>();
+
+            // Count how many times each word appears
+            for (int i = 0; i < words.Length; i++)
+            {
+                string word = words[i];
+
+                if (counter.ContainsKey(word))
+                {
+                    counter[word]++;
+                }
+                else
+                {
+                    counter[word] = 1;
+                }
+            }
+
+            // Copy Keys / Values into arrays
+            string[] keys = new string[counter.Count];
+            int[] values = new int[counter.Count];
+            counter.Keys.CopyTo(keys, 0);
+            counter.Values.CopyTo(values, 0);
+
+            // Print word and count at the same index
+            for (int i = 0; i < keys.Length; i++)
+            {
+                Debug.Log($"word: '{keys[i]}' count: {values[i]}");
+            }
+        
         }
 
         [Header("AS02 - Count Number")]

@@ -382,7 +382,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fbaf664c0f73049ab5d67e60db4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assignment.Assignment
-  as01Words: []
+  as01Words:
+  - apple
+  - banana
+  - apple
+  - cherry
+  - banana
+  - apple
   as02Numbers: 
   as03Input: 
   as04List:
