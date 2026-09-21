@@ -389,16 +389,34 @@ MonoBehaviour:
   - cherry
   - banana
   - apple
-  as02Numbers: 
-  as03Input: 
+  - hello
+  - hello
+  - world
+  - test
+  as02Numbers: 01000000020000000300000002000000010000000300000001000000050000000500000005000000
+  as03Input: '(]'
   as04List:
     values: 
   as05List:
-    values: []
+    values:
+    - B
+    - A
+    - C
+    - v
+    - S
+    - o
   as06FirstDictionary:
-    entries: []
+    entries:
+    - key: apple
+      value: 3
+    - key: banana
+      value: 2
   as06SecondDictionary:
-    entries: []
+    entries:
+    - key: apple
+      value: 1
+    - key: cherry
+      value: 4
   as07List:
     values: 
   as08Numbers: 
